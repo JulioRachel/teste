@@ -1,0 +1,137 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+    background: darkblue;
+    height: 100vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+#voltar a{
+	display: flex;
+	font-size: 20px;
+	margin-top: 15px;
+	color: white;
+}
+#redes{
+	background: rgba(0, 0, 255, 0.3);
+	border-radius: 15px;
+	padding: 5px;
+	color: white;
+	font-weight: bolder;
+	transition: 0.5s;
+}
+#redes:hover{
+	text-shadow: -2px -2px 2px blue;
+	background: cyan;
+	color: darkblue;
+	font-weight: bolder;
+}
+.stream{
+	color: darkblue;
+	font-weight: bolder;
+	background: darkcyan;
+}
+.content{
+	background: rgba(0, 0, 255, 0.3);
+	border-radius: 15px;
+	padding: 30px;
+	width: 30%;
+}
+h1{
+	
+	padding: 30px;
+	text-align: center;
+	transition: 0.5s;
+}
+h1:hover{
+	text-shadow: 3px 3px 2px blue;
+}
+.content form{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;/*16px*/
+}
+.span-required{
+	display: none;
+	font-size: 10px;
+	color: red;
+	margin: 3px 0 0 2px;
+}
+.inputs-required{
+	padding: 8px 5px;
+	border-radius: 10px;
+	outline: none;
+	background: darkblue;
+	color: white;
+	font-weight: bold;
+	transition: 0.5s;
+}
+.inputs:focus{
+	border-color: white;
+}
+.inputs:hover{
+	background: blue;
+}
+p{
+	font-weight: 700;
+	font-size: 18px;
+	color: cyan;
+	transition: 0.5s;
+}
+p:hover{
+	text-shadow: -2px -2px 2px black;
+}
+fieldset{
+	display: flex;
+	padding: 5px;
+	justify-content: space-evenly;
+	border-radius: 10px;
+	align-content: center;
+}
+button{
+	color: darkblue;
+	font-weight: bolder;
+	background: darkcyan;
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	border-color: white;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	margin-left: 35%;
+	font-size: 18px;
+	transition: 0.5s;
+}
+button:hover{
+	background: cyan;
+	color: blue;
+}
+@media(max-width: 850px){
+	body{
+		margin-top: 120px;
+	}
+	h1{
+		width: 100%;
+		margin: 0;
+	}
+	fieldset{
+		display: flex;
+		flex-direction: column;
+	}
+	.inputs-required{
+		width: 100%;
+	}
+	.content{
+	    width: 80%;
+	}
+	
+}

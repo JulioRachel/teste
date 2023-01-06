@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face  {
+    font-family: 'noir';
+    src: url('fonts/noir-black.ttf');
+
+}
+@font-face  {
+    font-family: 'merenda';
+    src: url('fonts/Merienda-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'queen';
+    src: url('../fonts/Queen_of_Camelot.otf');
+}
+@font-face{
+    font-family: elasi;
+    src: url('../fonts/elasis.ttf');
+}
+@font-face{
+    font-family: Drum;
+    src: url('../fonts/Drum-N-Bass.ttf');
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: darkblue;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    padding-left: 25px;
+    font-size: 45px;
+    font-weight: 700;
+    border-right: 2px black dotted;
+    padding-right: 50px;
+}
+h1{
+    font-family: Drum;
+    padding-top: 20px;
+    text-shadow: 2px 15px 2px black;
+    color: white;
+}
+h3{
+    font-size: 30px;
+    text-shadow: 2px 5px 2px black;
+    color: white;
+}
+nav{
+    display: flex;
+
+}
+nav input{
+    margin: 15px;
+    list-style: none;
+    width: 140px;
+    font-weight: 700;
+    text-decoration: none;
+    height: 35px;
+    border-radius: 12px; 
+    margin-bottom: 15px;
+    font-family: merenda;
+    font-size: 13px;
+}
+nav input:hover{
+    background: darkcyan;
+    font-family: merenda;
+    font-size: 15px;
+    color: white;
+    border-color: white;
+}
+nav a{
+    border: none;
+}
+nav a:hover{
+    color: white;
+    box-shadow: none;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 5px;    
+    text-shadow: 2px 2px 2px #CCC;
+}
+a:hover{
+    border: 2px solid white;
+    color: white;
+    text-shadow: 3px 2px 2px black;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: darkcyan;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background: darkblue;
+    float: left;
+    border-color: white;
+}
+#redes{
+    width: 100%;
+}
+footer ul{
+    display: flex;
+}
+footer ul li{
+    margin: 35px;
+    list-style: none;
+    border-color: white;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+
+@media(max-width: 920px) {
+header{
+    display: flex;
+    flex-direction: column;
+    background: red;
+}
+}
+
+
+@media(max-width: 850px) {
+header{
+    display: flex;
+    flex-direction: column;
+    background: blue;
+}
+nav input{
+    margin: 0;
+    width: 120px;
+}
+main{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    width: 100%;
+    height: 100px;
+}
+#redes{
+    width: 100%;
+}
+footer ul{
+    display: flex;
+}
+footer ul li{
+    margin: 0;
+    list-style: none;
+}
+footer ul li a{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.logo img{
+    height: 20px;
+    width: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 0;    
+    text-shadow: 1px 1px 1px #CCC;
+}
+img{
+    height: 340px;
+}
+.logo{
+    display: flex;
+   
+    font-size: 40px;
+    font-weight: 700;
+}
+}
