@@ -1,0 +1,97 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../estilo/formulario.css">
+	<title>Formulario Jotta</title>
+</head>
+<header>
+	<p id="voltar"><a href="../index.html">Voltar</a></p>
+	<h1></h1>
+</header>
+<body>		
+	<div class="content">
+		<h1>Formulario</h1>
+		<form action="" method="post" id="form">
+			<div>
+				<input type="text" id="nome" placeholder="Digite seu nome" class="inputs-required" required oninput="nameValidate()">
+				<span class="span-required" id="span">Nome deve conter no minimo 3 caracteres</span>
+			</div>
+			<div>
+				<input type="email" id="email" placeholder="Digite seu email" class="inputs-required" oninput="emailValidate()">
+				<span class="span-required" id="span">Digite um e-mail valido</span>
+			</div>
+			<div>
+				<input type="password" id="senha" placeholder="Digite sua senha" class="inputs-required" oninput="senhaValidate()">
+				<span class="span-required" id="span">A senha deve conter pelo menos 8 caracteres</span>
+			</div>
+			<div>
+				<input type="password" id="rptsenha" placeholder="Repita a senha" class="inputs-required" required oninput="senha2Validate()">
+				<span class="span-required" id="span">As senhas devem ser compativeis</span>
+			</div>
+			<div>
+	    	<p>Por onde me conheceu?</p>
+	    	<select id="redes">
+	    		<option selected disabled value="">Escolha</option>
+	    		<option class="stream">Facebook</option>
+	    		<option class="stream">Twitch</option>
+	    		<option class="stream">Youtube</option>
+	    		<option class="stream">tiktok</option>
+	    		<option class="stream">Indicação</option>
+	    	</select>
+	    </div>
+			<textarea name="descrição" id="descrição" cols="30" rows="10" placeholder="Fale mais sobre você..." class="inputs-required"></textarea>
+			<p>Como se Identifica?</p>
+			<fieldset>
+			    <div class="preencha">
+			    	<input type="radio" name="sexo" id="m" value="m">
+			    	<label for="m">Masculino</label>
+			    </div>
+			    <div class="preencha">
+			    	<input type="radio" name="sexo" id="f" value="f">
+			    	<label for="f">Feminino</label>
+			    </div>
+			    <div class="preencha">
+			    	<input type="radio" name="sexo" id="nb" value="nb">
+			    	<label for="nb">Não Binario</label>
+			    </div>
+			</fieldset>
+			<p>Quais jogos você mais gosta?</p>
+			<fieldset>
+			    <div class="preencha">
+			    	<input type="checkbox" name="DeadByDaylight" id="DBD" value="DeadByDaylight">
+			    	<label for="DBD">DBD</label>
+			    </div>
+			    <div class="preencha">
+			    	<input type="checkbox" name="rainbow6" id="R6" value="rainbow6">
+			    	<label for="R6">Rainbow 6</label>
+			    </div>
+			    <div class="preencha">
+			    	<input type="checkbox" name="Fortnite" id="Ft" value="Fortnite">
+			    	<label for="Ft">Fortnite</label>
+			    </div>
+			    <div class="preencha">
+			    	<input type="checkbox" name="AssassinsCreed" id="AC" value="AssassinsCreed">
+			    	<label for="AC">Assassin's Creed</label>
+			    </div>
+			</fieldset>
+			<p>Por onde você costuma jogar?</p>
+			<fieldset> 			    
+			    <div class="preencha">
+			    	<input type="checkbox" name="PC" id="PC" value="PC">
+			    	<label for="PC">PC</label>
+			    </div><div class="preencha">
+			    	<input type="checkbox" name="Console" id="Console" value="Console">
+			    	<label for="Console">Console</label>
+			    </div><div class="preencha">
+			    	<input type="checkbox" name="Mobile" id="Mobile" value="Mobile">
+			    	<label for="Mobile">Mobile</label>
+			    </div>
+			</fieldset>
+			<button type="submit" id="enviar">Enviar</button>
+		</form>
+	</div>
+</body>
+<script src="../script/cadastro.js"></script>
+</html>
